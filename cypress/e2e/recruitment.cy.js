@@ -13,9 +13,6 @@ describe('Recruitment', () => {
         recruitment.recuitmentTab()
     })
     it('should search candidates', () => {
-        // recruitment.vacancyTab()
-        // recruitment.togglebutton()
-        // recruitment.jobTitle()
         recruitment.jobTitleDropdown()
         recruitment.accountAssistant().contains('Account Assistant').click()
         // recruitment.jobTitleName().click()
