@@ -24,17 +24,22 @@ describe('PIM', () => {
     admin.enterPassword();
     admin.clickLoginButton();
    admin.verifyUrl();
-   admin.header();
+  //  admin.header();
     
    pim.checkPIM();
    
    
-    pim.AddemployeeTab();
+    // pim.AddemployeeTab();
    
-    pim.ReportTab();
-    pim.employeetab();
-    pim.employeeName();
-    pim.search();
+    // pim.ReportTab();
+    // pim.employeetab();
+    // pim.employeeName();
+    // pim.employeeId();
+  
+    // pim.employmentDropdown()
+    //  pim.supervisorName()
+    pim.jobTitle()
+    // pim.search();
 
     
     
