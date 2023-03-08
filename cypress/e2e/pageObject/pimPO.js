@@ -16,7 +16,7 @@ class PIM {
         return cy.get(".oxd-topbar-body-nav-tab-item").contains('Reports').click().url().should('include', '/pim/viewDefinedPredefinedReports')
     }
     search(){
-        return cy.get('.orangehrm-left-space').click({force:true})
+        return cy.get('.orangehrm-left-space').click({force:true})  
     }
 
      employeeName(){

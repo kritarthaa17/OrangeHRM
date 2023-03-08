@@ -7,6 +7,12 @@ class Time{
    timeSheet(){
     return cy.get('.oxd-topbar-body-nav-tab-item').contains('Timesheet').click()
    }
+   selectEmployee(){
+      return cy.get('.oxd-input-group').contains('Employee Name').click({force:true})
+   }
+   viewTab(){
+      return cy.get('.oxd-form-actions > .oxd-button').contains('View').click({force:true})
+   }
    myTimesheet(){
     return cy.get('.oxd-topbar-body-nav-tab-link').contains('My Timesheets').click()
    }

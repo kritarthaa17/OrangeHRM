@@ -39,6 +39,29 @@ describe ('Time',() => {
 
 
     })
+    it('should display timesheet pending list', () => {
+        admin.visit()
+        admin.enterUsername();
+        admin.enterPassword();
+        admin.clickLoginButton();
+        admin.verifyUrl();
+        admin.header();
+
+        time.checkTime();
+        time.selectEmployee();
+    })
+    it.only('should clicked view tab', () => {
+        admin.visit()
+        admin.enterUsername();
+        admin.enterPassword();
+        admin.clickLoginButton();
+        admin.verifyUrl();
+        admin.header();
+
+        time.checkTime();
+        time.selectEmployee();
+        time.viewTab();
+    })
     it('should display attendence', () => {
         admin.visit()
         admin.enterUsername();
@@ -84,7 +107,7 @@ describe ('Time',() => {
         time.attendanceSummary();
 
     })
-    it.only('should display report', () => {
+    it('should display report', () => {
         admin.visit()
         admin.enterUsername();
         admin.enterPassword();
